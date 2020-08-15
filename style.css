@@ -95,7 +95,7 @@ body {
 // Customise Icons
 .icon--linkedin a {
     background-color: #007fb1;
-    background-image: url('linkedin.svg');
+    background-image:<center><img src="linkedin.svg" width=800px></center>;
 }
 
 .icon--instagram a {
