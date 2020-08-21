@@ -1,84 +1,137 @@
 <html>
 <head>
-  <title>Carbonless apartments near Boston, MA</title>
-<center>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style type="text/css">
-
-/* map needs width and height to appear */
-#map{
-	width: 900px;
-	max-width: 100%;
-	height: 500px;
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
 </style>
-
-</head>
-<body>
-
-<!-- this div will hold your map -->
-<div id="map"></div>
-
-<!-- this div will hold your store info -->
-<div id="info_div"></div>
-
-<script>
-function initMap() {
-	var myMapCenter = {lat: 40.785091, lng: -73.968285};
-
-	// Create a map object and specify the DOM element for display.
-	var map = new google.maps.Map(document.getElementById('map'), {
-		center: myMapCenter,
-		zoom: 14
-	});
-
-
-	function markStore(storeInfo){
-
-		// Create a marker and set its position.
-		var marker = new google.maps.Marker({
-			map: map,
-			position: storeInfo.location,
-			title: storeInfo.name
-		});
-
-		// show store info when marker is clicked
-		marker.addListener('click', function(){
-			showStoreInfo(storeInfo);
-		});
-	}
-
-	// show store info in text box
-	function showStoreInfo(storeInfo){
-		var info_div = document.getElementById('info_div');
-		info_div.innerHTML = 'Store name: '
-			+ storeInfo.name
-			+ '<br>Hours: ' + storeInfo.hours;
-	}
-
-	var stores = [
-		{
-			name: 'Store 1',
-			location: {lat: 40.785091, lng: -73.968285},
-			hours: '8AM to 10PM'
-		},
-		{
-			name: 'Store 2',
-			location: {lat: 40.790091, lng: -73.968285},
-			hours: '9AM to 9PM'
-		}
-	];
-
-	stores.forEach(function(store){
-		markStore(store);
-	});
-
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+<title>CARBONLESS Living</title>
+         <link rel="stylesheet" href="style.css">
+<div class="header">          
+  <div class="logo">
+       <br>
+       <img src="Spacer.png" style="max-height: 10px;" alt="">
+       <a href="https://jackbotein.github.io/carbonless" target="_blank">
+       <img src="carbonlesslogo.png" style="max-height: 50px;">
+                     <img src="Spacer.png" style="max-height: 15px;">
+       <a href="https://jackbotein.github.io/carbonless/apartmentbuildingowners.html" target="_blank">
+        <img src="apartmentbuildingownericon.png" style="max-height: 40px;">
+                     <img src="Spacer.png" style="max-height: 25px;">
+        <a href="https://www.linkedin.com/in/jack-botein-b5654619a/" target="_blank">
+        <img src="signinupicon.png" style="max-height: 40px;">
+                     <img src="Spacer.png" style="max-height: 25px;"alt="">
+         <a href="https://jackbotein.github.io/carbonless/whylivecarbonless.html" target=_blank">
+        <img src="whylivecarbonlessicon.png" style="max-height: 40px;" alt="">
+    </a>
+  </div>
+<style>
+       body {
+  background-color:rgb(0, 0, 0);
 }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR6WPVcZGT7dr_sJTeHhAY4NEDTHH2GoA&callback=initMap" async defer></script>
-</body>
-</center>
-  <html>
+</style>
+<br>
+<br>                                                                            
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+</style>
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+<title>CARBONLESS Living</title>
+         <link rel="stylesheet" href="style.css">
+<div class="header">          
+  <div class="logo">
+       <br>
+       <img src="Spacer.png" style="max-height: 10px;" alt="">
+       <a href="https://jackbotein.github.io/carbonless" target="_blank">
+       <img src="carbonlesslogo.png" style="max-height: 50px;">
+                     <img src="Spacer.png" style="max-height: 15px;">
+       <a href="https://jackbotein.github.io/carbonless/apartmentbuildingowners.html" target="_blank">
+        <img src="apartmentbuildingownericon.png" style="max-height: 40px;">
+                     <img src="Spacer.png" style="max-height: 25px;">
+        <a href="https://www.linkedin.com/in/jack-botein-b5654619a/" target="_blank">
+        <img src="signinupicon.png" style="max-height: 40px;">
+                     <img src="Spacer.png" style="max-height: 25px;"alt="">
+         <a href="https://jackbotein.github.io/carbonless/whylivecarbonless.html" target=_blank">
+        <img src="whylivecarbonlessicon.png" style="max-height: 40px;" alt="">
+    </a>
+  </div>
+<style>
+       body {
+  background-color:rgb(0, 0, 0);
+}
+</style>
+<br>
+<br>                                                                            
+<center><white><h1>search bar that directs to geographically divided map<h1></white></center>
+<br>
+<br>
+ <div class="footer">
+  <div class="social-icons section">
+  <div style="float: center">
+    <a href="https://linkedin.com/jackbotein" target="_blank">
+      <img src="linkedin.png" style="max-height: 32px;">
+    </a>
+    <a href="" target="_blank">
+      <img src="spacer2.png" style="max-height: 32px;">
+      </a>
+    <a href="https://www.instagram.com/jakeauchincloss/" target="_blank">
+      <img src="instagram.png" style="max-height: 32px;">
+    </a>
+  </div>
+</html>
+<br>
+<br>
+ <div class="footer">
+  <div class="social-icons section">
+  <div style="float: center">
+    <a href="https://linkedin.com/jackbotein" target="_blank">
+      <img src="linkedin.png" style="max-height: 32px;">
+    </a>
+    <a href="" target="_blank">
+      <img src="spacer2.png" style="max-height: 32px;">
+      </a>
+    <a href="https://www.instagram.com/jakeauchincloss/" target="_blank">
+      <img src="instagram.png" style="max-height: 32px;">
+    </a>
+  </div>
+</html>
