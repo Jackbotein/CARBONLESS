@@ -49,3 +49,8 @@
 a{
   text-decoration: none;
 }
+.title {
+   color:rgb(57, 181, 74);
+   font-family: phosphate;
+   font-size: 40px;
+}
