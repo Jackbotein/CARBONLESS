@@ -63,15 +63,42 @@
 			};
 			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-			var goldenGatePosition = {lat: 42.3487,lng: -71.1306};
+			var EVOBostonposition = {lat: 42.3487, lng: -71.1306};
 			var marker = new google.maps.Marker({
-				position: goldenGatePosition,
+				position: EVOBostonposition,
 				map: map,
-				title: 'The EVO Boston'
+				title: 'The EVO: Boston, MA'
 		});
 			var contentString = '<div id="content"><div class="popuptitle"><center>The EVO Boston</center></div><br><div class="popupsubtitle"><center>Address: 10 Brainerd Road, Boston MA</center></div><br><br><iframe src="https://albumizr.com/a/p34j" scrolling="no" frameborder="0" allowfullscreen width="600" height="400"></iframe><br><br><center><a href="https://jackbotein.github.io/carbonless/theevo"><img src="viewavailability.png" style="max-height: 50px;"></center></a>';
 
-
+            var Beaconposition = {lat: 42.350228, lng: -71.090912};
+			var marker = new google.maps.Marker({
+				position: Beaconposition,
+				map: map,
+				title: '529 Beacon Street: Boston, MA'
+		});
+        
+            var Harvardposition = {lat: 42.335892, lng: -71.120124};
+			var marker = new google.maps.Marker({
+				position: Harvardposition,
+				map: map,
+				title: '83 Harvard Street: Brookline, MA'
+		});
+        
+            var Cambridgeposition = {lat: 42.371855, lng: -71.087633};
+			var marker = new google.maps.Marker({
+				position: Cambridgeposition,
+				map: map,
+				title: '660 Cambridge Street: Cambridge, MA'
+		});
+			
+            var Marionposition = {lat: 42.339662, lng: -71.121721};
+			var marker = new google.maps.Marker({
+				position: Marionposition,
+				map: map,
+				title: '14 Marion Street: Brookline, MA'
+		});
+			
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
 			});
@@ -80,6 +107,11 @@
 				infowindow.open(map, marker);
 			});
 		}
+        
+        
+        
+        
+ 
 	</script>
 </head>
 <body>
