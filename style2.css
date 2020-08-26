@@ -40,7 +40,14 @@ a{
 }
 .title {
    color:rgb(255, 255, 255);
-   font-family: phosphate;
+   font-family: phosphate-solid;
+   font-size: 50px;
+   padding: 0px:
+   margin: 0px;
+}
+.subtitle {
+   color:rgb(255, 255, 255);
+   font-family: phosphate-sold;
    font-size: 31px;
    padding: 0px:
    margin: 0px;
@@ -48,12 +55,7 @@ a{
 .popuptitle {
    color:rgb(57, 181, 74);
    font-family: phosphate;
-   font-size: 31px;
+   font-size: 40px;
    padding: 0px:
    margin: 0px;
-}
-.popupimages {
-   width: 200px;
-   height: 200px;
-   float: center;
 }
