@@ -59,3 +59,17 @@ a{
    padding: 0px:
    margin: 0px;
 }
+.bigtitle {
+   color:rgb(57, 181, 74);
+   font-family: phosphate-solid;
+   font-size: 47px;
+   padding: 0px:
+   margin: 0px;
+}
+.subtitle {
+   color:rgb(57, 181, 74);
+   font-family: phosphate-solid;
+   font-size: 35px;
+   padding: 0px:
+   margin: 0px;
+}
