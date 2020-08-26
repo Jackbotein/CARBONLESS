@@ -34,3 +34,11 @@
    font-family:sans-serif;
    text-align: center;
 }
+.header {
+   position: fixed;
+   height: 90px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   background-color:rgb(173, 216, 230);
+}
