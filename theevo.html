@@ -26,7 +26,7 @@
 }
 </style>
      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-<title>The EVO, Boston</title>
+<title>CARBONLESS Living</title>
 <link rel="stylesheet" href="style2.css">
 
 <style>
@@ -35,12 +35,8 @@
 }
 </style>
 		  <br>
-<div class="bigtitle">
-<center>The EVO</center>
-                  </div>
- 		  <br>
-<div class="subtitle">
-<center>Address: 10 Brainerd Road, Boston MA</center>
+<div class="title">
+<center>Check out these Carbon Neutral Apartments in (and around) Boston</center>
                   </div>
 		  <br>
 	<meta charset="UTF-8">
@@ -51,7 +47,7 @@
 		}
 		/* Optional: Makes the sample page fill the window. */
 		html, body {
-			height: 617px;
+			height: 629px;
 			width: 1437.5px;
 			margin: 0;
 			padding: 0;
@@ -66,11 +62,11 @@
 			};
 			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-			var EVOBostonposition = {lat: 42.3487, lng: -71.1306};
+            var Marionposition = {lat: 42.339662, lng: -71.121721};
 			var marker = new google.maps.Marker({
-				position: EVOBostonposition,
+				position: Marionposition,
 				map: map,
-				title: 'The EVO: Boston, MA'
+				title: '14 Marion Street: Brookline, MA'
 		});
 			var contentString = '<div id="content"><div class="popuptitle"><center>The EVO Boston</center></div><br><div class="popupsubtitle"><center>Address: 10 Brainerd Road, Boston MA</center></div><br><br><iframe src="https://albumizr.com/a/p34j" scrolling="no" frameborder="0" allowfullscreen width="600" height="400"></iframe><br><br><center><a href="https://jackbotein.github.io/carbonless/theevo"><img src="viewavailability.png" style="max-height: 50px;"></center></a>';
 
@@ -95,11 +91,11 @@
 				title: '660 Cambridge Street: Cambridge, MA'
 		});
 			
-            var Marionposition = {lat: 42.339662, lng: -71.121721};
+         	var EVOBostonposition = {lat: 42.3487, lng: -71.1306};
 			var marker = new google.maps.Marker({
-				position: Marionposition,
+				position: EVOBostonposition,
 				map: map,
-				title: '14 Marion Street: Brookline, MA'
+				title: 'The EVO: Boston, MA'
 		});
 			
 			var infowindow = new google.maps.InfoWindow({
@@ -110,8 +106,6 @@
 				infowindow.open(map, marker);
 			});
 		}
-        
-        
         
         
  
@@ -158,4 +152,3 @@
 <div class="footerbottom">
   </div>
 </html>
- 
