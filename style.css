@@ -62,7 +62,7 @@ a{
 .subtitle {
    color:rgb(255, 255, 255);
    font-family: phosphate-solid;
-   font-size: 35px;
+   font-size: 25px;
    padding: 0px:
    margin: 0px;
 }
@@ -74,7 +74,7 @@ a{
    background-color:rgb(173, 216, 230);
    color: rgb(0, 0, 0);
    Font-size:12px:
-   font-family:phosphate-solid;
+   font-family: Courier New;
    text-align: left;
    text-margin: 30px;
 }
