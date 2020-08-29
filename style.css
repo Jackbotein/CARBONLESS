@@ -52,7 +52,7 @@
 } 
 .navbar {
    position: fixed;
-   top: 0px;
+   top: 20px;
    right: 70px;
    background-color:rgb(173, 216, 230);
 }
