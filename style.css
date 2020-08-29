@@ -87,19 +87,19 @@ a{
 }
 .signature {
    font-family: cursive;
-   font-color: (255, 255, 255);
+   color: (255, 255, 255);
    font-size: 25px;
    float: center;
 }
 .undersignature {
    font-family: phosphate-solid;
-   font-color: (255, 255, 255);
+   color: (255, 255, 255);
    font-size: 17px;
    float: center;
 }
 .text {
    font-family:Courier New;
-   font-color: rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
    font-size: 20px;
    margin-right: 20px;
    margin-left: 20px;
