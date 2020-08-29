@@ -52,3 +52,17 @@ a{
    padding: 0px:
    margin: 0px;
 }
+.bigtitle {
+   color:rgb(255, 255, 255);
+   font-family: phosphate-solid;
+   font-size: 47px;
+   padding: 0px:
+   margin: 0px;
+}
+.subtitle {
+   color:rgb(255, 255, 255);
+   font-family: phosphate-solid;
+   font-size: 35px;
+   padding: 0px:
+   margin: 0px;
+}
