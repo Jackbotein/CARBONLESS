@@ -95,9 +95,16 @@ a{
    font-size: 25px;
    float: center;
 }
+.undersignature {
+   font-family: phosphate-solid;
+   font-size: 17px;
+   float: center;
+}
 .text {
    font-family:Courier New;
    font-size: 20px;
-   margin-right: 50px;
-   margin-left: 50px;
+   margin-right: 20px;
+   margin-left: 20px;
+   margin-top: 20px;
+   margin-bottom-: 20px;
 }
