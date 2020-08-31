@@ -87,13 +87,13 @@ a{
 }
 .signature {
    font-family: cursive;
-   color: (255, 255, 255);
+   color: rgb(255, 255, 255);
    font-size: 25px;
    float: center;
 }
 .undersignature {
    font-family: phosphate-solid;
-   color: (255, 255, 255);
+   color: rgb(255, 255, 255);
    font-size: 17px;
    float: center;
 }
