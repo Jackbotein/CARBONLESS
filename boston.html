@@ -39,88 +39,47 @@
 <center>Check out these Carbon Neutral Apartments in (and around) Boston</center>
                   </div>
 		  <br>
-	<meta charset="UTF-8">
-	<style>
-		#map {
-			height: 100%;
-		}
-		/* Optional: Makes the sample page fill the window. */
-		html, body {
-			height: 588px;
-			width: 1437.5px;
-			margin: 0;
-			padding: 0;
-		}
-	</style>
-	<script>
-		function initMap() {
-			var mapOptions = {
-				zoom: 11,
-				center: new google.maps.LatLng(42.3601, -71.0589),
-				mapTypeId: 'roadmap'
-			};
-			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-            var Marionposition = {lat: 42.339662, lng: -71.121721};
-			var marker = new google.maps.Marker({
-				position: Marionposition,
-				map: map,
-				title: '14 Marion Street: Brookline, MA'
-		});
-			var contentString = '<div id="content"><div class="popuptitle"><center>The EVO Boston</center></div><br><div class="popupsubtitle"><center>Address: 10 Brainerd Road, Boston MA</center></div><br><br><iframe src="https://albumizr.com/a/p34j" scrolling="no" frameborder="0" allowfullscreen width="600" height="400"></iframe><br><br><center><a href="https://jackbotein.github.io/carbonless/theevo"><img src="viewavailability.png" style="max-height: 50px;"></center></a>';
-
-            var Beaconposition = {lat: 42.350228, lng: -71.090912};
-			var marker = new google.maps.Marker({
-				position: Beaconposition,
-				map: map,
-				title: '529 Beacon Street: Boston, MA'
-		});
-        
-            var Harvardposition = {lat: 42.335892, lng: -71.120124};
-			var marker = new google.maps.Marker({
-				position: Harvardposition,
-				map: map,
-				title: '83 Harvard Street: Brookline, MA'
-		});
-        
-            var Cambridgeposition = {lat: 42.371855, lng: -71.087633};
-			var marker = new google.maps.Marker({
-				position: Cambridgeposition,
-				map: map,
-				title: '660 Cambridge Street: Cambridge, MA'
-		});
-			
-         	var EVOBostonposition = {lat: 42.3487, lng: -71.1306};
-			var marker = new google.maps.Marker({
-				position: EVOBostonposition,
-				map: map,
-				title: 'The EVO: Boston, MA'
-		});
-			
-			var infowindow = new google.maps.InfoWindow({
-				content: contentString
-			});
-																	    
-			marker.addListener('click', function() {
-				infowindow.open(map, marker);
-			});
-		}
-        
-        
- 
-	</script>
-</head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <title>Google Maps Multiple Markers</title> 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR6WPVcZGT7dr_sJTeHhAY4NEDTHH2GoA&callback=initMap" 
+          type="text/javascript"></script>
+</head> 
 <body>
-<div id="map"></div>
-<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR6WPVcZGT7dr_sJTeHhAY4NEDTHH2GoA&callback=initMap">
-</script>
-<style>
+  <div id="map" style="width: 1437.5px; height: 588px;"></div>
 
+  <script type="text/javascript">
+    var locations = [
+      ['<div id="content"><div class="popuptitle"><center>The EVO Boston</center></div><br><div class="popupsubtitle"><center>Address: 10 Brainerd Road, Boston MA</center></div><br><br><iframe src="https://albumizr.com/a/p34j" scrolling="no" frameborder="0" allowfullscreen width="600" height="400"></iframe><br><br><center><a href="https://jackbotein.github.io/carbonless/theevo"><img src="viewavailability.png" style="max-height: 50px;"></center></a>', 42.339662, -71.121721, 4],
+      ['<div id="content"><div class="popuptitle"><center>The EVO Boston</center></div><br><div class="popupsubtitle"><center>Address: 10 Brainerd Road, Boston MA</center></div><br><br><iframe src="https://albumizr.com/a/p34j" scrolling="no" frameborder="0" allowfullscreen width="600" height="400"></iframe><br><br><center><a href="https://jackbotein.github.io/carbonless/theevo"><img src="viewavailability.png" style="max-height: 50px;"></center></a>', 42.350228, -71.090912, 5],
+      ['<div id="content"><div class="popuptitle"><center>The EVO Boston</center></div><br><div class="popupsubtitle"><center>Address: 10 Brainerd Road, Boston MA</center></div><br><br><iframe src="https://albumizr.com/a/p34j" scrolling="no" frameborder="0" allowfullscreen width="600" height="400"></iframe><br><br><center><a href="https://jackbotein.github.io/carbonless/theevo"><img src="viewavailability.png" style="max-height: 50px;"></center></a>', 42.335892, -71.120124, 3],
+      ['<div id="content"><div class="popuptitle"><center>The EVO Boston</center></div><br><div class="popupsubtitle"><center>Address: 10 Brainerd Road, Boston MA</center></div><br><br><iframe src="https://albumizr.com/a/p34j" scrolling="no" frameborder="0" allowfullscreen width="600" height="400"></iframe><br><br><center><a href="https://jackbotein.github.io/carbonless/theevo"><img src="viewavailability.png" style="max-height: 50px;"></center></a>', 42.371855, -71.087633, 2],
+      ['<div id="content"><div class="popuptitle"><center>The EVO Boston</center></div><br><div class="popupsubtitle"><center>Address: 10 Brainerd Road, Boston MA</center></div><br><br><iframe src="https://albumizr.com/a/p34j" scrolling="no" frameborder="0" allowfullscreen width="600" height="400"></iframe><br><br><center><a href="https://jackbotein.github.io/carbonless/theevo"><img src="viewavailability.png" style="max-height: 50px;"></center></a>', 42.3487, -71.1306, 1]
+    ];
 
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(42.3601, -71.0589),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
 
-</style>
+    var infowindow = new google.maps.InfoWindow();
 
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
 <div class="footertop">
   </div>
  <div class="footer">
