@@ -57,7 +57,43 @@ li a:hover:not(.clickedon) {
 <center>Find carbon neutral apartments in:</center>
                   </div>
 		<br>
-    <p>insert open source slideshow here></p>
+	
+	
+     <script type ="text/javaScript">
+
+     var image1=new Image()
+  image1.src="https://pixabay.com/get/53e1d24b4852a914f6d1867dda2936791239d9e4504c704c7c267ad09f45c05c_1920.jpg"
+  var image2=new Image()
+  image2.src="beauty.jpg"
+
+    </script> 
+    </head> 
+
+    <body>
+    <img src="globe/images/correct.png" name="firstImage" height = 100 width=300></img>
+    </body>
+
+    <script type="text/javascript">
+    //variable that would increment through the images
+    var step = 1  
+    function slideit() {
+
+
+    if(step<2) 
+    step++
+    else 
+    step=1
+
+    document.images.firstImage.src=window["image"+step].src;
+
+
+
+    //call function "slideit()" every 2.5 seconds
+    setTimeout(slideit,2500)
+    }
+    slideit()
+    </script>
+
     <div class="footertop">
   </div>
  <div class="footer">
