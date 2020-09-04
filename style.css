@@ -53,6 +53,7 @@
 .navbar {
    position: fixed;
    top: 20px;
+   right: 0px;
    background-color:rgb(173, 216, 230);
 }
 a{
