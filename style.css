@@ -1,1 +1,112 @@
+.footer {
+   position: fixed;
+   height: 32px;
+   left: 0;
+   bottom: 5;
+   width: 100%;
+   background-color:rgb(173, 216, 230);
+   color: rgb(0, 0, 0);
+   Font-size:12px:
+   font-family:sans-serif;
+   text-align: center;
+}
+.footertop {
+   position: fixed;
+   height: 5px;
+   left: 0;
+   bottom: 37;
+   width: 100%;
+   background-color:rgb(173, 216, 230);
+   color: rgb(0, 0, 0);
+   Font-size:12px:
+   font-family:sans-serif;
+   text-align: center;
+}
+.footerbottom {
+   position: fixed;
+   height: 5px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgb(173, 216, 230);
+   color: rgb(0, 0, 0);
+   Font-size:12px:
+   font-family:sans-serif;
+   text-align: center;
+}
+.header {
+   position: fixed;
+   height: 59px;
+   left: 0;
+   top: 20;
+   width: 100%;
+   background-color:rgb(173, 216, 230);
+}
+.headertop {
+   position: fixed;
+   height: 20px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   background-color:rgb(173, 216, 230);
+} 
+.navbar {
+   position: fixed;
+   top: 20px;
+   right: 0px;
+   background-color:rgb(173, 216, 230);
+}
+a{
+  text-decoration: none;
+}
+.title {
+   color:rgb(255, 255, 255);
+   font-family: phosphate-solid;
+   font-size: 31px;
+   padding: 0px:
+   margin: 0px;
+}
+.bigtitle {
+   color:rgb(255, 255, 255);
+   font-family: phosphate-solid;
+   font-size: 47px;
+   padding: 0px:
+   margin: 0px;
+}
+.container1 {
+   height: 500px;
+   left: 0;
+   right:0;
+   width: 100%;
+   background-color:rgb(173, 216, 230);
+   color: rgb(0, 0, 0);
+   Font-size:12px:
+   font-family: Courier New;
+   text-align: left;
+   text-margin: 30px;
+}
+.signature {
+   font-family: cursive;
+   color: rgb(40, 54, 66);
+   font-size: 25px;
+   float: center;
+}
+.undersignature {
+   font-family: phosphate-solid;
+   color: rgb(40, 54, 66);
+   font-size: 17px;
+   float: center;
+}
+.text {
+   font-family:"Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;;
+   color: rgb(40, 54, 66);
+   font-size: 20px;
+   margin-right: 20px;
+   margin-left: 20px;
+   margin-top: 20px;
+   margin-bottom-: 20px;
+}
+.logo {
+   margin-left: 50px;
+}
 
