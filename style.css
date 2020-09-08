@@ -90,8 +90,8 @@ a{
    font-family:"Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
    color: rgb(40, 54, 66);
    font-size: 20px;
-   margin-right: 60px;
-   margin-left: 60px;
+   margin-right: 30px;
+   margin-left: 30px;
    margin-top: 5px;
    margin-bottom-: 20px;
 }
@@ -102,5 +102,5 @@ a{
    font-family:phosphate-solid;
    color: rgb(40, 54, 66);
    font-size: 30px;
-   margin-left: 40px;
+   margin-left: 30px;
 }
