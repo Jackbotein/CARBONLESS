@@ -86,7 +86,7 @@ a{
    text-margin: 30px;
 }
 .text {
-   font-family:"Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;;
+   font-family:"Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
    color: rgb(40, 54, 66);
    font-size: 20px;
    margin-right: 20px;
@@ -96,4 +96,10 @@ a{
 }
 .logo {
    margin-left: 50px;
+}
+.textsubheading {
+   font-family:phosphate-solid;
+   color: rgb(40, 54, 66);
+   font-size: 30px;
+   margin-left: 20px;
 }
