@@ -1,7 +1,7 @@
-  <html>
+<html>
 <head>
      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-<title>Carbonless Living</title>
+<title>Carbonless Brookline Apts</title>
          <link rel="stylesheet" href="style.css">
 	 <link rel="stylesheet" href="style2.css">
 <div class="headertop">
@@ -12,7 +12,7 @@
        <img src="carbonlesslogo.png" style="max-height: 50px;">
        </a>
   </div>
-  <div class="navbar"> 
+ <div class="navbar"> 
 	  <style>
 ul {
   list-style-type: none;
@@ -55,11 +55,9 @@ li a:hover {
  <br>
  <br>
 <div class="title">
-<center>Check out these carbonless apartments in [and around] Chicago</center>
+<center>Check out these Carbonless apartments in Brookline</center>
                   </div>
 		<br>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
-  <title>Google Maps Multiple Markers</title> 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR6WPVcZGT7dr_sJTeHhAY4NEDTHH2GoA&callback=initMap" 
           type="text/javascript"></script>
 </head> 
@@ -76,11 +74,16 @@ li a:hover {
     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 12,
+      zoom: 13,
       center: new google.maps.LatLng(42.3601, -71.0589),
-      mapTypeId: google.maps.MapTypeId.HYBRID
+      mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-
+    
+	  const ctaLayer = new google.maps.KmlLayer({
+    url: "https://jackbotein.github.io/carbonless/bostonboundry.kml",
+    map: map
+  });
+  
     var infowindow = new google.maps.InfoWindow();
 
     var marker, i;
