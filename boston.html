@@ -1,4 +1,4 @@
-  <html>
+<html>
 <head>
      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 <title>Carbonless Living</title>
@@ -76,9 +76,14 @@ li a:hover {
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 13,
       center: new google.maps.LatLng(42.3601, -71.0589),
-      mapTypeId: google.maps.MapTypeId.HYBRID
+      mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-
+    
+	  const ctaLayer = new google.maps.KmlLayer({
+    url: "https://jackbotein.github.io/carbonless/boston.kml",
+    map: map
+  });
+  
     var infowindow = new google.maps.InfoWindow();
 
     var marker, i;
