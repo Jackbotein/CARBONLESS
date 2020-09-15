@@ -10,7 +10,7 @@
 </Schema>
 <Folder><name>bos_land</name>
   <Placemark>
-	<Style><LineStyle><color>ff39b54a</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#bos_land">
 		<SimpleData name="BOSTON_LAN">1</SimpleData>
 		<SimpleData name="SHAPE_area">1346516231.47000002861</SimpleData>
