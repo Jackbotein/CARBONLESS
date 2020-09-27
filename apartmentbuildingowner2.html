@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <meta charset="UTF-8">
+  <title>Carbonless Living | Legal</title>
+  <link rel='stylesheet' href='https://jackbotein.github.io/carbonless/fullpagejs.css'>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<header>
+  <div class="header-top clearfix">
+	  <br>
+    <h1 class="l-left"><a href="https://jackbotein.github.io/carbonless/#about"><img src="https://jackbotein.github.io/carbonless/carbonlesslogo.png" style="max-height:50px"</a></h1>
+    <a class="l-right toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+  </div>
+</header>
+
+<div id="fullpage">
+  <section class="vertical-scrolling">
+    <h2>Legal</h2>
+  </section>
+  <section class="vertical-scrolling">
+     <h2>Third Party Code and Service</h2>
+  </section>
+  <section class="vertical-scrolling">
+     <h2>Terms and Conditions</h2>
+  </section>
+  <section class="vertical-scrolling">
+     <h2>Equal Housing Opportunity</h2>
+  </section>
+</div>
+<style>
+.missiontext {
+text-align: left;
+margin-left: 69px;
+margin-right: 69px;
+font-size: 20px;
+}
+</style>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+<script  src="function.js"></script>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, arial;
+	text-transform: uppercase;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	color: black;
+	letter-spacing: .18em;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+ul, li {
+	list-style-type: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.l-left {
+	float: left;
+}
+.l-right {
+	float: right;
+}
+.end {
+	margin-top: 30px;
+	font-size: 3em;
+	font-weight: bold;
+	opacity: 0;
+	-webkit-transform: translateY(300px);
+	        transform: translateY(300px);
+	transition: opacity, -webkit-transform 1s;
+	transition: opacity, transform 1s;
+	transition: opacity, transform 1s, -webkit-transform 1s;
+	transition-delay: 1s;
+}
+.header-top {
+	background: rgba(0, 47, 77, .3);
+	height: 70px;
+	padding: 0 70px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 12;
+	box-sizing: border-box;
+}
+h1 {
+	line-height: 70px;
+	height: 70px;
+}
+h1 a {
+	display: block;
+	padding: 0 10px;
+}
+.toggle-menu {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+}
+
+.toggle-menu i:nth-child(1) {
+	top: 16px;
+}
+.toggle-menu i:nth-child(2) {
+	top: 24px;
+}
+.toggle-menu i:nth-child(3) {
+	top: 32px;
+}
+.open-menu i:nth-child(1) {
+	top: 25px;
+	-webkit-transform: rotateZ(45deg);
+	        transform: rotateZ(45deg);
+}
+.open-menu i:nth-child(2) {
+	background: transparent;
+}
+.open-menu i:nth-child(3) {
+	top: 25px;
+	-webkit-transform: rotateZ(-45deg);
+	        transform: rotateZ(-45deg);
+}
+nav {
+ 	height: 0;
+	opacity: 0;
+  box-sizing: border-box;
+	background: rgba(0, 47, 77, .25);
+	position: fixed;
+	top: 70px;
+	width: 100%;
+  transition: all 1s;
+}
+.open-menu ~ nav {
+	opacity: 1;
+ 	padding: 80px 0;
+	z-index: 15;
+	height: calc(90vh - 70px);
+}
+nav ul {
+	padding: 0 10px;
+	display: flex;
+}
+nav li {
+	flex: 1;
+}
+nav li a {
+	font-size: 2em;
+	display: block;
+	padding: 30px;
+	text-align: center;
+	transition: background .3s;
+}
+nav li a {
+	background: #ff4b4b;
+	margin-left: 20px;
+}
+nav li a:hover {
+	background: #212121;
+}
+section { 
+	text-align: center;
+}
+h2 {
+	font-size: 4em;
+	margin-bottom: 20px;
+}
+h3 {
+	font-weight: 300;
+	font-size: 2.8em;
+}
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+	background: white;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+}
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+	width: 16px;
+	height: 16px;
+	margin: -8px 0 0 -8px;
+	background: transparent;
+	box-sizing: border-box;
+	border: 2px solid #3bb54c;
+}
+ 
+@media screen and (max-width: 767px) {
+	nav ul {
+		flex-direction: column;
+	}
+ 
+	nav li {
+		margin-top: 1px;
+	}
+  
+  nav li a {
+    font-size: 1.5em;
+  }
+  
+  .scroll-icon {
+    display: none;
+  }
+}
+ 
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  
+  .open-menu ~ nav {
+		padding: 20px 0;
+	}
+ 
+	nav li a {
+		padding: 3px;
+	}
+}</style>
+<script>var $header_top = $('.header-top');
+var $nav = $('nav');
+ 
+$header_top.find('a').on('click', function() {
+  $(this).parent().toggleClass('open-menu');
+});
+ 
+$('#fullpage').fullpage({ 
+  sectionsColor: ['#aed8e6', '#aed8e6', '#aed8e6', '#aed8e6', '#aed8e6', '#aed8e6'],
+  sectionSelector: '.vertical-scrolling',
+  navigation: true,
+  slidesNavigation: true,
+  controlArrows: false,
+  anchors: ['home', 'thirdpartycode', 'termsandconditions', 'equalhousingopportunity'],
+  menu: '#menu',
+ 
+  afterLoad: function(anchorLink, index) {
+    $header_top.css('background', '#aed8e6');
+    $nav.css('background', 'rgba(255, 255, 255, .25)');
+    if (index == 5) {
+        $('#fp-nav').hide();
+      }
+  },
+ 
+  onLeave: function(index, nextIndex, direction) {
+    if(index == 5) {
+      $('#fp-nav').show();
+    }
+  },
+ 
+ 
+});</script>
+</body>
+</html>
