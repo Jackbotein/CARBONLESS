@@ -24,7 +24,7 @@
 
 <div id="fullpage">
   <section class="vertical-scrolling">
-    <h2>Our Mission</h2>
+    <div class=phosphate-solidtext><h2>Our Mission</h2></div>
 	  <div class="missiontext">
     <h4>Over the past two centuries our world has become addicted to carbon intensive fossil fuels. These fuels have brought short term prosperity, at the expense of the future. With just 1.5 degrees celsius of warming (projected to occur between 2030-2052), the Intergovernmental Panel on Climate Change estimates that climate change will lead to surges in global conflict, a fifty percent spike in water insecurity, and damage to coastal regions. More troubling, by 2100, the Climate Impact Lab at the University of Chicago has estimated that climate related mortality will surpass that of all infectious diseases.</h4>
 <br>
@@ -38,7 +38,9 @@
 <br>
   </section>
   <section class="vertical-scrolling">
-	  <h2>Find Carbonless Apartments in:</h2><h3>(click to view)</h3>  
+  <div class="phosphate-solidtext">
+	  <h2>Find Carbonless Apartments in:</h2><h3>(click to view)</h3> 
+      </div>
     <br>
     <br>
     <a href="https://jackbotein.github.io/carbonless/#boston">
@@ -68,6 +70,7 @@
 <br>
 <br>
 <center>
+<div class="phosphate-solidtext">
 <h2><u>Legal</u></h2>
 <a href="https://jackbotein.github.io/carbonless/legal#thirdpartycode" target="blank"><h3>3rd Party Code</h3></a>
 <a href="https://jackbotein.github.io/carbonless/legal#termsandconditions" target="blank"><h3>Term and conditions</h3></a>
@@ -101,6 +104,7 @@
 <br>
 <br>
 	<p>Copyright 2020 Carbonless Living LLC. All rights Reserved.</p>
+    </div>
 </div>
 </center>
   </section>
@@ -111,6 +115,10 @@ text-align: left;
 margin-left: 69px;
 margin-right: 69px;
 font-size: 20px;
+font-family: sans-serif;
+}
+.phosphate-solidtext {
+font-family: phosphate-solid;
 }
 </style>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
@@ -120,7 +128,6 @@ font-size: 20px;
 * {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif, arial;
 	text-transform: uppercase;
 }
 html {
